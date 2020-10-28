@@ -16,6 +16,9 @@ while True:
       feelings_list.append("sad")
       quotes_list.append("learning to let go is the key to happiness")
       counter += 1
+    if each_word == "depressed":
+      feelings_list.append("depressed")
+      quotes_list.append("learning to let go is the key to happiness. Forget past mistakes. Forget failures. Forget about everything except what you’re going to do now — and do it.")
     if each_word == "happy":
       feelings_list.append("happy")
       quotes_list.append("Stay positive~ Be kind whenever possible")
@@ -26,7 +29,7 @@ while True:
       counter += 1
     if each_word == "indecisive":
       quotes_list.append("indecisive")
-      encouragement_list.append("sometimes the heart sees what invisible to the eye")
+      encouragement_list.append("sometimes the heart sees what's invisible to the eye")
       counter += 1
     if each_word == "bored":
       feelings_list.append("bored")
@@ -38,13 +41,9 @@ while True:
       counter += 1   
     if each_word == "angry":
       feelings_list.append("angry")
-      quotes_list.append("Calm down. Never make impulsive decisions out of anger")
+      quotes_list.append("Calm down. Never make impulsive decisions out of anger. Speak when you are angry and you will make the best speech you will ever regret.")
       counter += 1
     if each_word == "ambitious":
-      feelings_list.append("ambitious")
-      quotes_list.append("set your goals high and never stop until you get there")
-      counter += 1
-    if each_word == "":
       feelings_list.append("ambitious")
       quotes_list.append("set your goals high and never stop until you get there")
       counter += 1
@@ -68,6 +67,32 @@ while True:
       feelings_list.append("lost")
       quotes_list.append("it's normal to be confused, take time to think things through, I believe in you!")
       counter += 1 
+    if each_word == "challenged":
+      feelings_list.append("challenged")
+      quotes_list.append("Being challenged in life is inevitable, being defeated is optional. The struggle you're in today is developing the strength you need for tmorrow. ")
+      counter += 1   
+    if each_word == "frustrated":
+      feelings_list.append("frustrated")
+      quotes_list.append("Always remember that your present situation is not your final destination, the best is yet to come." "When you can't control what's happening, challenge yourself to control the way you respond to what's happening.")
+      counter += 1 
+    if each_word == "hopeless":
+      feelings_list.append("hopeless")
+      quotes_list.append("However difficult life may seem, there is always something you can do and succeed at. Always remember that your present situation is not your final destination, the best is yet to come.") 
+      counter += 1 
+    if each_word == "unfair":
+      feelings_list.append("unfair")
+      quotes_list.append("Always remember that your present situation is not your final destination, the best is yet to come. Nothing is permanent in this world, not even our troubles. When life is sweet, say thankyou and celebrate. When life is bitter, say thankyou and grow.")
+      counter += 1 
+    if each_word == "helpless":
+      feelings_list.append("helpless")
+      quotes_list.append("Helplessness is a mindset.  It's like a sickness, the cure calls for a monumental effort to stand up and start walking, but that takes some doing. When you can't control what's happening, challenge yourself to control the way you respond to what's happening.Choose to see the light even in your darkest moments. We are all ordinary. We are all boring. We are all spectacular. We are all shy. We are all bold. We are all heroes. We are all helpless. It just depends on the day.")
+      counter += 1   
+    if each_word == "Troubled":
+      feelings_list.append("Troubled")
+      quotes_list.append(" Nothing is permanent in this world, not even our troubles.")
+      counter += 1
+    
+   
       
   if counter == 0:
     
@@ -75,7 +100,8 @@ while True:
 
   elif counter == 1:
     
-      output = "It seems that you are feeling quite " + feelings_list[0] + ". However, do remember that "+quotes_list[0] + "! Hope you feel better :)"  
+      output = "It seems that you are feeling quite " + feelings_list[0] + ". However, do remember that "+quotes_list[0] + "Hope you feel better :)" 
+   
 
   else:
 
@@ -90,7 +116,9 @@ while True:
     encouragement += "and " + quotes_list[-1]
 
     output = "It seems that you are feeling quite " + feelings + ". Please always remember "+ encouragement + "! Hope you feel better :)"
-
+    
   print()
   print(output)
   print()
+
+ 

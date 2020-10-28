@@ -14,19 +14,19 @@ while True:
     
     if each_word == "sad":
       feelings_list.append("sad")
-      quotes_list.append("learning to let go is the key to happiness")
+      quotes_list.append("Learning to let go is the key to happiness")
       counter += 1
-    if each_word == "happy":
-      feelings_list.append("happy")
+    if each_word in ["happy","cheerful","joyful"]:
+      feelings_list.append(each_word)
       quotes_list.append("Stay positive~ Be kind whenever possible")
       counter += 1
-    if each_word == "tired":
-      feelings_list.append("tired")
-      quotes_list.append("tough times don't last but tough people do")
+    if each_word in ["tired","exhausted","drained"]:
+      feelings_list.append(each_word)
+      quotes_list.append("Tough times don't last but tough people do")
       counter += 1
     if each_word == "indecisive":
       quotes_list.append("indecisive")
-      encouragement_list.append("sometimes the heart sees what invisible to the eye")
+      encouragement_list.append("Sometimes the heart sees what invisible to the eye")
       counter += 1
     if each_word == "bored":
       feelings_list.append("bored")
@@ -42,32 +42,37 @@ while True:
       counter += 1
     if each_word == "ambitious":
       feelings_list.append("ambitious")
-      quotes_list.append("set your goals high and never stop until you get there")
+      quotes_list.append("Set your goals high and never stop until you get there")
       counter += 1
-    if each_word == "":
-      feelings_list.append("ambitious")
-      quotes_list.append("set your goals high and never stop until you get there")
-      counter += 1
-    if each_word == "afraid":
-      feelings_list.append("afraid")
+    if each_word in ["afraid","scared","frightened"]:
+      feelings_list.append(each_word)
       quotes_list.append("Never let your fear decide your future")
       counter += 1
     if each_word == "anxious":
       feelings_list.append("anxious")
       quotes_list.append("Trust yourself. You have survived a lot of obstacles and you will brave through what's coming")
       counter += 1
-    if each_word == "sick":
-      feelings_list.append("sick")
+    if each_word in ["sick","queasy","unwell"]:
+      feelings_list.append(each_word)
       quotes_list.append("There are some days when you need to rest. Stay strong")
       counter += 1
     if each_word == "jealous":
       feelings_list.append("jealous")
-      quotes_list.append("jealousy is counting other's blessings instead of your own. Don't be jealous of others")
+      quotes_list.append("Jealousy is counting other's blessings instead of your own. Don't be jealous of others")
       counter += 1  
-    if each_word == "lost":
-      feelings_list.append("lost")
-      quotes_list.append("it's normal to be confused, take time to think things through, I believe in you!")
+    if each_word in ["lost","confused","unsure", "unclear"] :
+      feelings_list.append(each_word)
+      quotes_list.append("It's normal to be confused, take time to think things through, I believe in you!")
       counter += 1 
+    if each_word in ["satisfied","content"] :
+      feelings_list.append(each_word)
+      quotes_list.append("A blissful state of the heart, the seed of which gives rise to peace. I'm happy for you :)")
+      counter += 1 
+    if each_word in ["peaceful","tranquil", "calm"] :
+      feelings_list.append(each_word)
+      quotes_list.append("Peace comes from within, do not seek it without. Inner peace heals the soul ")
+      counter += 1
+      
       
   if counter == 0:
     

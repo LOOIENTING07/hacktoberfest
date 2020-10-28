@@ -68,7 +68,7 @@ while True:
       feelings_list.append(each_word)
       quotes_list.append("A blissful state of the heart, the seed of which gives rise to peace. I'm happy for you :)")
       counter += 1 
-    if each_word in ["peaceful","at peace","tranquil", "calm"] :
+    if each_word in ["peaceful","tranquil", "calm"] :
       feelings_list.append(each_word)
       quotes_list.append("Peace comes from within, do not seek it without. Inner peace heals the soul ")
       counter += 1

@@ -1,8 +1,9 @@
 # hacktoberfest
-print("Title of program: Quotes Bot")
-print()
+from datetime import datetime
+print("--- Quotes Bot ---\n")
+
 while True:
-  description = input("Hi! How do you feel now?")
+  description = input("Hi! Happy " + datetime.today().strftime('%A') + "! How do you feel now?")  # greet the user with the day of the week
 
   list_of_words = description.split()
 
@@ -115,10 +116,6 @@ while True:
       encouragement += quotes_list[i] + ", "
     encouragement += "and " + quotes_list[-1]
 
-    output = "It seems that you are feeling quite " + feelings + ". Please always remember "+ encouragement + "! Hope you feel better :)"
+    output = "\nIt seems that you are feeling quite " + feelings + ". Please always remember "+ encouragement + "! Hope you feel better :)\n"
     
-  print()
   print(output)
-  print()
-
- 

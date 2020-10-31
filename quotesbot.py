@@ -92,7 +92,10 @@ while True:
       feelings_list.append("Troubled")
       quotes_list.append(" Nothing is permanent in this world, not even our troubles.")
       counter += 1
-    
+    if each_word == "Nervous":
+      feelings_list.append("Nervous")
+      quotes_list.append("Confidence is what we get when we take fear, face it and replace it.")
+      counter += 1    
    
       
   if counter == 0:
